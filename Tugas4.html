@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gaming Hub</title>
+
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    header {
+        text-align: center;
+        padding: 30px;
+        background: rgba(0,0,0,0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        font-size: 28px;
+    }
+
+    header i {
+        color: #00f7ff;
+        font-size: 40px;
+    }
+
+    .features {
+        flex: 1;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+        padding: 50px;
+        text-align: center;
+    }
+
+    .feature-item {
+        background: rgba(255,255,255,0.05);
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(0,247,255,0.3);
+        transition: 0.3s;
+    }
+
+    .feature-item:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 25px rgba(0,247,255,0.8);
+    }
+
+    .feature-item i {
+        font-size: 50px;
+        margin-bottom: 15px;
+        color: #00f7ff;
+    }
+
+    footer {
+        background: rgba(0,0,0,0.7);
+        text-align: center;
+        padding: 20px;
+    }
+
+    .social-icons i {
+        font-size: 28px;
+        margin: 0 15px;
+        cursor: pointer;
+        transition: 0.3s;
+        color: #aaa;
+    }
+
+    .social-icons i:hover {
+        color: #00f7ff;
+    }
+
+    @media (max-width: 768px) {
+        .features {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <i class="fa-solid fa-gamepad"></i>
+    <h1>Gaming Arena</h1>
+</header>
+
+<!-- FITUR -->
+<section class="features">
+    <div class="feature-item">
+        <i class="fa-solid fa-rocket"></i>
+        <h3>Fast Gameplay</h3>
+    </div>
+
+    <div class="feature-item">
+        <i class="fa-solid fa-trophy"></i>
+        <h3>Competitive Mode</h3>
+    </div>
+
+    <div class="feature-item">
+        <i class="fa-solid fa-users"></i>
+        <h3>Multiplayer</h3>
+    </div>
+
+    <div class="feature-item">
+        <i class="fa-solid fa-headset"></i>
+        <h3>Live Support</h3>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>Connect With Us</p>
+    <div class="social-icons">
+        <i class="fa-brands fa-discord"></i>
+        <i class="fa-brands fa-twitch"></i>
+        <i class="fa-brands fa-youtube"></i>
+    </div>
+</footer>
+
+</body>
+</html>
